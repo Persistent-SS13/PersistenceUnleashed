@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <base href="../../../" />
+    <link rel="stylesheet" href="dmdoc.css" />
+    <title>&#x2F;datum&#x2F;controller&#x2F;subsystem&#x2F;mapping - Space Station 13 - Nebula13</title>
+</head>
+<body>
+<header>
+    <a href="index.html">Space Station 13 - Nebula13</a> -
+    <a href="index.html#modules">Modules</a> -
+    <a href="index.html#types">Types</a>
+ &mdash; <a href="datum/controller/subsystem/mapping.html#var">Var Details</a> - <a href="datum/controller/subsystem/mapping.html#proc">Proc Details</a></header>
+<main>
+<h1>mapping <aside>/<a href="datum.html">datum</a>/<a href="datum/controller/subsystem.html">controller/subsystem</a>/<a href="datum/controller/subsystem/mapping.html">mapping</a></aside>
+        
+    
+            <a href="https://github.com/Persistent-SS13/PersistenceUnleashed/blob/b86e419c536fe33833fbb8ea5e2d7edd1753c01e/code/controllers/subsystems/mapping.dm#L1">
+        <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystems&#x2F;mapping.dm 1"/></a></h1>
+
+<table class="summary" cellspacing="0"><tr><td colspan="2"><h2>Vars</h2></td></tr>
+            <tr><th><a href="datum/controller/subsystem/mapping.html#var/accessible_z_levels">accessible_z_levels</a></th><td>This list contains the z-level numbers which can be accessed via space travel and the percentile chances to get there.</td></tr>
+            <tr><th><a href="datum/controller/subsystem/mapping.html#var/admin_levels">admin_levels</a></th><td>List of z-levels for admin functionality (Centcom, shuttle transit, etc)</td></tr>
+            <tr><th><a href="datum/controller/subsystem/mapping.html#var/base_floor_area">base_floor_area</a></th><td>Replacement area, if a base_floor_type is generated. Leave blank to skip.</td></tr>
+            <tr><th><a href="datum/controller/subsystem/mapping.html#var/base_floor_type">base_floor_type</a></th><td>The turf type used when generating floors between Z-levels at startup.</td></tr>
+            <tr><th><a href="datum/controller/subsystem/mapping.html#var/base_turf_by_z">base_turf_by_z</a></th><td>Custom base turf by Z-level. Defaults to world.turf for unlisted Z-levels</td></tr>
+            <tr><th><a href="datum/controller/subsystem/mapping.html#var/connected_z_cache">connected_z_cache</a></th><td>A list of connected z-levels to avoid repeatedly rebuilding connections</td></tr>
+            <tr><th><a href="datum/controller/subsystem/mapping.html#var/contact_levels">contact_levels</a></th><td>List of z-levels that can be contacted from the station, for eg announcements</td></tr>
+            <tr><th><a href="datum/controller/subsystem/mapping.html#var/levels_by_id">levels_by_id</a></th><td>Associative list of levels by string ID</td></tr>
+            <tr><th><a href="datum/controller/subsystem/mapping.html#var/levels_by_z">levels_by_z</a></th><td>Associative list of levels by strict z-level</td></tr>
+            <tr><th><a href="datum/controller/subsystem/mapping.html#var/map_levels">map_levels</a></th><td>Z-levels available to various consoles, such as the crew monitor. Defaults to station_levels if unset.</td></tr>
+            <tr><th><a href="datum/controller/subsystem/mapping.html#var/mining_levels">mining_levels</a></th><td>List of z-levels that regenerates mining turfs periodically</td></tr>
+            <tr><th><a href="datum/controller/subsystem/mapping.html#var/player_levels">player_levels</a></th><td>List of z-levels a character can typically reach</td></tr>
+            <tr><th><a href="datum/controller/subsystem/mapping.html#var/sealed_levels">sealed_levels</a></th><td>List of z-levels that don't allow random transit at edge</td></tr>
+            <tr><th><a href="datum/controller/subsystem/mapping.html#var/station_levels">station_levels</a></th><td>List of z-levels containing the 'main map'</td></tr><tr><td colspan="2"><h2>Procs</h2></td></tr>
+            <tr><th><a href="datum/controller/subsystem/mapping.html#proc/Save">Save</a></th><td></td></tr>
+            <tr><th><a href="datum/controller/subsystem/mapping.html#proc/get_connected_levels_data">get_connected_levels_data</a></th><td>Returns a list of all the level data of all the connected z levels to the given z.DBColumn</td></tr>
+            <tr><th><a href="datum/controller/subsystem/mapping.html#proc/register_level_data">register_level_data</a></th><td>Registers all the needed infos from a level_data into the mapping subsystem</td></tr></table>
+    <h2 id="var">Var Details</h2><h3 id="var/accessible_z_levels"><aside class="declaration">var </aside>accessible_z_levels
+            <aside>&ndash; /list</aside>
+        
+    
+            <a href="https://github.com/Persistent-SS13/PersistenceUnleashed/blob/b86e419c536fe33833fbb8ea5e2d7edd1753c01e/code/controllers/subsystems/mapping.dm#L40">
+        <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystems&#x2F;mapping.dm 40"/></a></h3>
+        <p>This list contains the z-level numbers which can be accessed via space travel and the percentile chances to get there.</p><h3 id="var/admin_levels"><aside class="declaration">var </aside>admin_levels
+            <aside>&ndash; /list</aside>
+        
+    
+            <a href="https://github.com/Persistent-SS13/PersistenceUnleashed/blob/b86e419c536fe33833fbb8ea5e2d7edd1753c01e/code/controllers/subsystems/mapping.dm#L30">
+        <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystems&#x2F;mapping.dm 30"/></a></h3>
+        <p>List of z-levels for admin functionality (Centcom, shuttle transit, etc)</p><h3 id="var/base_floor_area"><aside class="declaration">var </aside>base_floor_area
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/Persistent-SS13/PersistenceUnleashed/blob/b86e419c536fe33833fbb8ea5e2d7edd1753c01e/code/controllers/subsystems/mapping.dm#L46">
+        <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystems&#x2F;mapping.dm 46"/></a></h3>
+        <p>Replacement area, if a base_floor_type is generated. Leave blank to skip.</p><h3 id="var/base_floor_type"><aside class="declaration">var </aside>base_floor_type
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/Persistent-SS13/PersistenceUnleashed/blob/b86e419c536fe33833fbb8ea5e2d7edd1753c01e/code/controllers/subsystems/mapping.dm#L44">
+        <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystems&#x2F;mapping.dm 44"/></a></h3>
+        <p>The turf type used when generating floors between Z-levels at startup.</p><h3 id="var/base_turf_by_z"><aside class="declaration">var </aside>base_turf_by_z
+            <aside>&ndash; /list</aside>
+        
+    
+            <a href="https://github.com/Persistent-SS13/PersistenceUnleashed/blob/b86e419c536fe33833fbb8ea5e2d7edd1753c01e/code/controllers/subsystems/mapping.dm#L38">
+        <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystems&#x2F;mapping.dm 38"/></a></h3>
+        <p>Custom base turf by Z-level. Defaults to world.turf for unlisted Z-levels</p><h3 id="var/connected_z_cache"><aside class="declaration">var </aside>connected_z_cache
+            <aside>&ndash; /list</aside>
+        
+    
+            <a href="https://github.com/Persistent-SS13/PersistenceUnleashed/blob/b86e419c536fe33833fbb8ea5e2d7edd1753c01e/code/controllers/subsystems/mapping.dm#L48">
+        <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystems&#x2F;mapping.dm 48"/></a></h3>
+        <p>A list of connected z-levels to avoid repeatedly rebuilding connections</p><h3 id="var/contact_levels"><aside class="declaration">var </aside>contact_levels
+            <aside>&ndash; /list</aside>
+        
+    
+            <a href="https://github.com/Persistent-SS13/PersistenceUnleashed/blob/b86e419c536fe33833fbb8ea5e2d7edd1753c01e/code/controllers/subsystems/mapping.dm#L32">
+        <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystems&#x2F;mapping.dm 32"/></a></h3>
+        <p>List of z-levels that can be contacted from the station, for eg announcements</p><h3 id="var/levels_by_id"><aside class="declaration">var </aside>levels_by_id
+            <aside>&ndash; /list</aside>
+        
+    
+            <a href="https://github.com/Persistent-SS13/PersistenceUnleashed/blob/b86e419c536fe33833fbb8ea5e2d7edd1753c01e/code/controllers/subsystems/mapping.dm#L26">
+        <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystems&#x2F;mapping.dm 26"/></a></h3>
+        <p>Associative list of levels by string ID</p><h3 id="var/levels_by_z"><aside class="declaration">var </aside>levels_by_z
+            <aside>&ndash; /list</aside>
+        
+    
+            <a href="https://github.com/Persistent-SS13/PersistenceUnleashed/blob/b86e419c536fe33833fbb8ea5e2d7edd1753c01e/code/controllers/subsystems/mapping.dm#L24">
+        <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystems&#x2F;mapping.dm 24"/></a></h3>
+        <p>Associative list of levels by strict z-level</p><h3 id="var/map_levels"><aside class="declaration">var </aside>map_levels
+            <aside>&ndash; /list</aside>
+        
+    
+            <a href="https://github.com/Persistent-SS13/PersistenceUnleashed/blob/b86e419c536fe33833fbb8ea5e2d7edd1753c01e/code/controllers/subsystems/mapping.dm#L42">
+        <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystems&#x2F;mapping.dm 42"/></a></h3>
+        <p>Z-levels available to various consoles, such as the crew monitor. Defaults to station_levels if unset.</p><h3 id="var/mining_levels"><aside class="declaration">var </aside>mining_levels
+            <aside>&ndash; /list</aside>
+        
+    
+            <a href="https://github.com/Persistent-SS13/PersistenceUnleashed/blob/b86e419c536fe33833fbb8ea5e2d7edd1753c01e/mods/persistence/controllers/subsystems/mapping.dm#L3">
+        <img src="git.png" width="16" height="16" title="mods&#x2F;persistence&#x2F;controllers&#x2F;subsystems&#x2F;mapping.dm 3"/></a></h3>
+        <p>List of z-levels that regenerates mining turfs periodically</p><h3 id="var/player_levels"><aside class="declaration">var </aside>player_levels
+            <aside>&ndash; /list</aside>
+        
+    
+            <a href="https://github.com/Persistent-SS13/PersistenceUnleashed/blob/b86e419c536fe33833fbb8ea5e2d7edd1753c01e/code/controllers/subsystems/mapping.dm#L34">
+        <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystems&#x2F;mapping.dm 34"/></a></h3>
+        <p>List of z-levels a character can typically reach</p><h3 id="var/sealed_levels"><aside class="declaration">var </aside>sealed_levels
+            <aside>&ndash; /list</aside>
+        
+    
+            <a href="https://github.com/Persistent-SS13/PersistenceUnleashed/blob/b86e419c536fe33833fbb8ea5e2d7edd1753c01e/code/controllers/subsystems/mapping.dm#L36">
+        <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystems&#x2F;mapping.dm 36"/></a></h3>
+        <p>List of z-levels that don't allow random transit at edge</p><h3 id="var/station_levels"><aside class="declaration">var </aside>station_levels
+            <aside>&ndash; /list</aside>
+        
+    
+            <a href="https://github.com/Persistent-SS13/PersistenceUnleashed/blob/b86e419c536fe33833fbb8ea5e2d7edd1753c01e/code/controllers/subsystems/mapping.dm#L28">
+        <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystems&#x2F;mapping.dm 28"/></a></h3>
+        <p>List of z-levels containing the 'main map'</p><h2 id="proc">Proc Details</h2><h3 id="proc/Save"><aside class="declaration">proc </aside>Save<aside>() 
+        
+    
+            <a href="https://github.com/Persistent-SS13/PersistenceUnleashed/blob/b86e419c536fe33833fbb8ea5e2d7edd1753c01e/mods/persistence/controllers/subsystems/mapping.dm#L26">
+        <img src="git.png" width="16" height="16" title="mods&#x2F;persistence&#x2F;controllers&#x2F;subsystems&#x2F;mapping.dm 26"/></a></aside>
+        </h3>
+        <pre><code>// Populate overmap.
+</code></pre>
+<p>if(length(global.using_map.overmap_ids))
+for(var/overmap_id in global.using_map.overmap_ids)
+var/overmap_type = global.using_map.overmap_ids[overmap_id] || /datum/overmap
+new overmap_type(overmap_id)
+// This needs to be non-null even if the overmap isn't created for this map.
+overmap_event_handler = GET_DECL(/decl/overmap_event_handler)</p><h3 id="proc/get_connected_levels_data"><aside class="declaration">proc </aside>get_connected_levels_data<aside>(z) 
+        
+    
+            <a href="https://github.com/Persistent-SS13/PersistenceUnleashed/blob/b86e419c536fe33833fbb8ea5e2d7edd1753c01e/code/controllers/subsystems/mapping.dm#L190">
+        <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystems&#x2F;mapping.dm 190"/></a></aside>
+        </h3>
+        <p>Returns a list of all the level data of all the connected z levels to the given z.DBColumn</p><h3 id="proc/register_level_data"><aside class="declaration">proc </aside>register_level_data<aside>(/<a href="datum.html">datum</a>/<a href="datum/level_data.html">level_data</a>/LD) 
+        
+    
+            <a href="https://github.com/Persistent-SS13/PersistenceUnleashed/blob/b86e419c536fe33833fbb8ea5e2d7edd1753c01e/code/controllers/subsystems/mapping.dm#L250">
+        <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystems&#x2F;mapping.dm 250"/></a></aside>
+        </h3>
+        <p>Registers all the needed infos from a level_data into the mapping subsystem</p></main>
+<footer>
+    nebula.dme
+    <a href="https://github.com/Persistent-SS13/PersistenceUnleashed/tree/b86e419c536fe33833fbb8ea5e2d7edd1753c01e">b86e419</a>
+        (dev) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/src/dmdoc/README.md">dmdoc 1.4.1</a></footer>
+</body>
+</html>
