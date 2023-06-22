@@ -8,6 +8,11 @@
 	one_hand_penalty = 0
 	origin_tech = "{'combat':3,'engineering':2,'materials':2}"
 	ammo_indicator = FALSE
+	caliber = CALIBER_PISTOL_SMALL
+	magazine_type = /obj/item/ammo_magazine/pistol/small
+	allowed_magazines = /obj/item/ammo_magazine/pistol/small
 
 /obj/item/gun/projectile/pistol/simple/empty
 	starts_loaded = FALSE
+
+	//what the **** is this
