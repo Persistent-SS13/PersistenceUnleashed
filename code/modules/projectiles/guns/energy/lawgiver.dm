@@ -32,17 +32,17 @@
 	new_mode.apply_to(src)
 
 /obj/item/gun/energy/lawgiver/Fire(atom/target as mob|obj|turf|area, mob/living/user as mob|obj, params, pointblank=0, reflex = 0)
-/*	if(src.dna != user.dna.unique_enzymes && !emagged)
+	if(src.dna != user.dna.unique_enzymes && !emagged)
 		if(istype(user, /mob/living/carbon/human))
 			//Save the users active hand
 			to_chat(user, "<span class='danger'>You hear a soft beep from the gun and 'ID FAIL' flashes across the screen.</span>")
 			to_chat(user, "<span class='danger'>You feel a tiny prick in your hand!</span>")
-			user.drop_item() */
+			user.drop_item()
 			//Blow up Unauthorized Users Hand//todo, delet this, as it's duplicate behaviour from Firing pins.
-//			sleep(60)
-//		return 0
-//	..()
-/*
+			sleep(60)
+		return 0
+	..()
+
 /obj/item/gun/energy/lawgiver/proc/Emag(mob/user as mob)
 	to_chat(usr, "<span class='warning'>You short out [src]'s id check</span>")
 	emagged = 1
@@ -60,6 +60,6 @@
 		return
 	if( (src.dna==H.dna.unique_enzymes || emagged) && (src in H.contents))
 		hear(msg)
-	return*/
+	return
 
 /////////////Needs a rework/////////////
