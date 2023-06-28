@@ -29,7 +29,7 @@ General Public License version 3.
 
 
 <h3 id="modules">Modules
-<aside>(183 modules,
+<aside>(184 modules,
     71/4289 macros, 1.7%)</aside></h3>
 <ul class="index-tree modules">
     <li><a href="(builtins).html" title="(builtins)">(builtins)</a></li>
@@ -159,9 +159,12 @@ General Public License version 3.
     <li><span class="no-substance">robot&#x2F;</span><a href="code/game/objects/items/robot/robot_items.html" title="code&#x2F;game&#x2F;objects&#x2F;items&#x2F;robot&#x2F;robot_items">robot_items</a></li>
     <li class="has-children"><span title="code&#x2F;game&#x2F;objects&#x2F;items&#x2F;weapons">weapons</span><ul class="index-tree">
     <li><a href="code/game/objects/items/weapons/AI_modules.html" title="code&#x2F;game&#x2F;objects&#x2F;items&#x2F;weapons&#x2F;AI_modules">AI_modules</a></li>
-    <li class="has-children"><span class="no-substance">circuitboards&#x2F;</span><span title="code&#x2F;game&#x2F;objects&#x2F;items&#x2F;weapons&#x2F;circuitboards&#x2F;computer">computer</span><ul class="index-tree">
+    <li class="has-children"><span title="code&#x2F;game&#x2F;objects&#x2F;items&#x2F;weapons&#x2F;circuitboards">circuitboards</span><ul class="index-tree">
+    <li class="has-children"><span title="code&#x2F;game&#x2F;objects&#x2F;items&#x2F;weapons&#x2F;circuitboards&#x2F;computer">computer</span><ul class="index-tree">
     <li><a href="code/game/objects/items/weapons/circuitboards/computer/computer.html" title="code&#x2F;game&#x2F;objects&#x2F;items&#x2F;weapons&#x2F;circuitboards&#x2F;computer&#x2F;computer">computer</a></li>
     <li><a href="code/game/objects/items/weapons/circuitboards/computer/modular.html" title="code&#x2F;game&#x2F;objects&#x2F;items&#x2F;weapons&#x2F;circuitboards&#x2F;computer&#x2F;modular">modular</a></li>
+    </ul></li>
+    <li><span class="no-substance">machinery&#x2F;</span><a href="code/game/objects/items/weapons/circuitboards/machinery/self_destruct_storage.html" title="code&#x2F;game&#x2F;objects&#x2F;items&#x2F;weapons&#x2F;circuitboards&#x2F;machinery&#x2F;self_destruct_storage">self_destruct_storage</a></li>
     </ul></li>
     <li><a href="code/game/objects/items/weapons/lighter.html" title="code&#x2F;game&#x2F;objects&#x2F;items&#x2F;weapons&#x2F;lighter">lighter</a></li>
     <li><span class="no-substance">storage&#x2F;</span><a href="code/game/objects/items/weapons/storage/persistence beacon imports.html" title="code&#x2F;game&#x2F;objects&#x2F;items&#x2F;weapons&#x2F;storage&#x2F;persistence beacon imports">persistence beacon imports</a></li>
@@ -329,7 +332,7 @@ Thanks to forum_account for saving the day, the library can be found
 
 
 <h3 id="types">Types
-<aside>(162 detailed/377 documented/18843 total, 2%)</aside></h3>
+<aside>(162 detailed/378 documented/18842 total, 2%)</aside></h3>
 <ul class="index-tree">
     <li><a href="global.html" title="(global)">(global)</a></li>
     <li class="has-children"><a href="area.html" title="&#x2F;area">area</a><ul class="index-tree">
@@ -799,6 +802,17 @@ origin_tech = &quot;{'programming':3}&quot;</li>
     <li><a href="obj/item/stock_parts/circuitboard/modular_computer.html" title="&#x2F;obj&#x2F;item&#x2F;stock_parts&#x2F;circuitboard&#x2F;modular_computer">modular_computer</a> - /obj/item/stock_parts/circuitboard/account_database
 name = &quot;circuitboard (accounts uplink terminal)&quot;
 build_path = /obj/machinery/computer/account_database</li>
+    <li><span class="no-substance" title="&#x2F;obj&#x2F;item&#x2F;stock_parts&#x2F;circuitboard&#x2F;nuclear_cylinder_storage">nuclear_cylinder_storage</span> - /obj/item/stock_parts/circuitboard/design_database
+name = &quot;circuitboard (design database)&quot;
+build_path = /obj/machinery/design_database
+board_type = &quot;machine&quot;
+origin_tech = &quot;{'programming':2, 'engineering':2}&quot;
+req_components = list()
+additional_spawn_components = list(
+/obj/item/stock_parts/power/apc/buildable = 1,
+/obj/item/stock_parts/console_screen = 1,
+/obj/item/stock_parts/keyboard = 1
+)</li>
     </ul></li>
     <li class="has-children"><a href="obj/item/stock_parts/item_holder.html" title="&#x2F;obj&#x2F;item&#x2F;stock_parts&#x2F;item_holder">item_holder</a> - Base class for stock parts that allow an item to be inserted while the maintenance panel is closed.<ul class="index-tree">
     <li><span class="no-substance" title="&#x2F;obj&#x2F;item&#x2F;stock_parts&#x2F;item_holder&#x2F;card_reader">card_reader</span> - Stock part for accessing/holding the subtypes of /obj/item/card.</li>
@@ -924,7 +938,7 @@ build_path = /obj/machinery/computer/account_database</li>
 </main>
 <footer>
     nebula.dme
-    <a href="https://github.com/Persistent-SS13/PersistenceUnleashed/tree/97ee1b9604fb6b1e4e6e3674bb1d651150578bc2">97ee1b9</a>
+    <a href="https://github.com/Persistent-SS13/PersistenceUnleashed/tree/94afa931d8d46fa88b86e314425cd2e1f467da07">94afa93</a>
         (dev) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/src/dmdoc/README.md">dmdoc 1.4.1</a></footer>
 </body>
 </html>
