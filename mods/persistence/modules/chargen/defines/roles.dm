@@ -87,8 +87,8 @@
 	name = "Frontier Surgeon"
 	desc = "You have a capable hand at surgery and medicine plus basic experience in Chemistry and EVA operation. As a Frontier Surgeon you will fight to keep your patients alive and clone those who cant be saved."
 	skills = list(
-		SKILL_ANATOMY = 2,
-		SKILL_MEDICINE = 2,
+		SKILL_ANATOMY = 3,
+		SKILL_MEDICAL = 3,
 		SKILL_CHEMISTRY	= 1,
 		SKILL_EVA = 1
 	)
