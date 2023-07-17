@@ -1,7 +1,7 @@
 // Armor piercing projs
 /obj/item/gun/energy/xray
 	name = "Smart laser carbine XK2"
-	desc = "The SmartInc XK 2 is a high-power laser gun capable of emitting concentrated x-ray blasts, that are able to penetrate laser-resistant armor much more readily than standard photonic beams. Tier: <font color=#a840b1><font size=2>Rare"
+	desc = "The SmartInc XK 2 is a high-power laser gun capable of emitting concentrated x-ray blasts, that are able to penetrate laser-resistant armor much more readily than standard photonic beams."
 	icon = 'icons/obj/guns/xray.dmi'
 	icon_state = ICON_STATE_WORLD
 	slot_flags = SLOT_LOWER_BODY|SLOT_BACK

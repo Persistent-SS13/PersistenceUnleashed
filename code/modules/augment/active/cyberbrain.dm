@@ -2,7 +2,7 @@
 	name = "cyberbrain module"
 	action_button_name = "Access cyberbrain"
 	icon_state = "cyberbrain"
-	allowed_organs = list(BP_HEAD)
+	allowed_organs = list(BP_AUGMENT_HEAD)
 	augment_flags = AUGMENTATION_MECHANIC
 	origin_tech = "{'materials':2,'magnets':3,'engineering':3,'biotech':2,'programming':4}"
 

@@ -147,7 +147,7 @@
 
 /obj/item/gun/projectile/automatic/sts556
 	name = "STS-556 Longrifle"
-	desc = "STS-556 is a automatic rifle used mostly by military forces. It is made of carbon steel. Tier: <font color=#a840b1><font size=2>Rare"
+	desc = "STS-556 is a automatic rifle used mostly by military forces. It is made of carbon steel."
 	icon = 'icons/obj/guns/bullpup_rifle.dmi'
 	w_class = ITEM_SIZE_HUGE
 	force = 10
@@ -266,7 +266,7 @@
 
 /obj/item/gun/projectile/automatic/sts337
 	name = "STS-337 Stormrider"
-	desc = "The STS-337 is a high-tech rifle produced by Shellguard as the martian service rifle. Tier: <font color=green><font size=2>Uncommon"
+	desc = "The STS-337 is a high-tech rifle produced by Shellguard as the martian service rifle."
 	icon = 'icons/obj/guns/sts337.dmi'
 	icon_state = "world"
 	w_class = ITEM_SIZE_HUGE
@@ -305,7 +305,7 @@
 
 /obj/item/gun/projectile/automatic/sts410
 	name = "STS-410 Stonevix"
-	desc = "The STS-410 is a newer version of the older STS. The 410 version have a better ammo capacity and better camoflauge colors for the rifle. Tier: <font color=#a840b1><font size=2>Rare"
+	desc = "The STS-410 is a newer version of the older STS. The 410 version have a better ammo capacity and better camoflauge colors for the rifle."
 	icon = 'icons/obj/guns/sts410.dmi'
 	icon_state = "world"
 	w_class = ITEM_SIZE_HUGE

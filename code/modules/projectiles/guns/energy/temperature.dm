@@ -1,9 +1,9 @@
 /obj/item/gun/energy/temperature
-	name = "smartinc temp pistol"
+	name = "temperature gun"
 	icon = 'icons/obj/guns/freezegun.dmi'
 	icon_state = ICON_STATE_WORLD
 	fire_sound = 'sound/weapons/pulse3.ogg'
-	desc = "The SmartInc 'temp pistol' is a gun that changes temperatures. It has a small label on the side, 'More extreme temperatures will cost more charge!'"
+	desc = "A gun that changes temperatures. It has a small label on the side, 'More extreme temperatures will cost more charge!'"
 	material = /decl/material/solid/metal/steel
 	matter = list(
 		/decl/material/solid/fiberglass = MATTER_AMOUNT_REINFORCEMENT,

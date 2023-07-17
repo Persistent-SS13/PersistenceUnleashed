@@ -79,7 +79,7 @@
 
 /obj/item/gun/projectile/pistol/ct45
 	name = "CT-45"
-	desc = "The CT-45 pistol. A handgun with a steel slide and wooden grip. Chambered in 10mm. Tier: <font color=green><font size=2>Uncommon"
+	desc = "The CT-45 pistol. A handgun with a steel slide and wooden grip. Chambered in 10mm"
 	icon = 'mods/persistence/icons/obj/guns/tier1/ct45.dmi'
 	item_state = null
 	ammo_indicator = FALSE

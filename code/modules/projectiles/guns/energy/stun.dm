@@ -30,20 +30,20 @@
 	recharge_time = 10 //Time it takes for shots to recharge (in ticks)
 
 /obj/item/gun/energy/plasmastun
-	name = "plasma ma21 projector"
-	desc = "The SmartInc MA21 Plasma is a weapon that uses a laser pulse to ionise the local atmosphere, creating a disorienting pulse of plasma and deafening shockwave as the wave expands. Tier: <font color=#a840b1><font size=2>Rare"
+	name = "plasma pulse projector"
+	desc = "The Mars Military Industries MA21 Selkie is a weapon that uses a laser pulse to ionise the local atmosphere, creating a disorienting pulse of plasma and deafening shockwave as the wave expands."
 	icon = 'icons/obj/guns/plasma_stun.dmi'
 	icon_state = ICON_STATE_WORLD
 	origin_tech = "{'combat':2,'materials':2,'powerstorage':3}"
 	fire_delay = 20
-	max_shots = 12
+	max_shots = 4
 	projectile_type = /obj/item/projectile/energy/plasmastun
 	combustion = 0
 	indicator_color = COLOR_VIOLET
 
 /obj/item/gun/energy/confuseray
 	name = "disorientator"
-	desc = "The SmartInc (Disorientator) is a small, low capacity, and short-ranged energy projector intended for personal defense with minimal risk of permanent damage or cross-fire. Tier: <font color=#bebebe><font size=2>Common"
+	desc = "The SmartInc (Disorientator) is a small, low capacity, and short-ranged energy projector intended for personal defense with minimal risk of permanent damage or cross-fire."
 	icon = 'icons/obj/guns/confuseray.dmi'
 	icon_state = ICON_STATE_WORLD
 	safety_icon = "safety"

@@ -254,28 +254,6 @@
 		M.dismantle_wall()
 	. = ..()
 
-/obj/item/projectile/beam/plasmacutter/adv
-	name = "plasma arc"
-	icon_state = "omnilaser"
-	fire_sound = 'sound/weapons/plasma_cutter.ogg'
-	damage = 25
-	sharp = 1
-	edge = 1
-	damage_type = BURN
-	life_span = 5
-	pass_flags = PASS_FLAG_TABLE
-	distance_falloff = 3
-
-	muzzle_type = /obj/effect/projectile/muzzle/plasma_cutter
-	tracer_type = /obj/effect/projectile/tracer/plasma_cutter
-	impact_type = /obj/effect/projectile/impact/plasma_cutter
-
-/obj/item/projectile/beam/plasmacutter/adv/on_impact(var/atom/A)
-	if(istype(A, /turf/exterior/wall))
-		var/turf/exterior/wall/M = A
-		M.dismantle_wall()
-	. = ..()
-
 /obj/item/projectile/beam/confuseray
 	name = "disorientator ray"
 	icon_state = "beam_grass"

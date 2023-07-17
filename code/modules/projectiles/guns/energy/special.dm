@@ -112,7 +112,7 @@
 
 /obj/item/gun/energy/plasmacutter
 	name = "plasma cutter"
-	desc = "A SmartInc mining tool capable of expelling concentrated plasma bursts. You could use it to cut limbs off of xenos! Or, you know, mine stuff. Tier: <font color=green><font size=2>Uncommon"
+	desc = "A mining tool capable of expelling concentrated plasma bursts. You could use it to cut limbs off of xenos! Or, you know, mine stuff."
 	charge_meter = 0
 	icon = 'icons/obj/guns/plasmacutter.dmi'
 	icon_state = ICON_STATE_WORLD
@@ -124,7 +124,7 @@
 	material = /decl/material/solid/metal/steel
 	projectile_type = /obj/item/projectile/beam/plasmacutter
 	max_shots = 10
-	self_recharge = 0
+	self_recharge = 1
 	material = /decl/material/solid/metal/steel
 	matter = list(
 		/decl/material/solid/fiberglass = MATTER_AMOUNT_REINFORCEMENT,
@@ -138,35 +138,6 @@
 
 /obj/item/gun/energy/plasmacutter/get_heat()
 	. = max(..(), 3800)
-
-/obj/item/gun/energy/plasmacutter/adv
-	name = "advanced plasma cutter"
-	desc = "A SmartInc advanced mining tool capable of expelling concentrated plasma bursts. You could use it to cut limbs off of xenos! Or, you know, mine stuff. Tier: <font color=#a840b1><font size=2>Rare"
-	charge_meter = 0
-	icon = 'icons/obj/guns/plasmacutteradv.dmi'
-	icon_state = ICON_STATE_WORLD
-	fire_sound = 'sound/weapons/plasma_cutter.ogg'
-	slot_flags = SLOT_LOWER_BODY|SLOT_BACK
-	w_class = ITEM_SIZE_NORMAL
-	force = 8
-	origin_tech = "{'materials':5,'exoticmatter':4,'engineering':7,'combat':4}"
-	material = /decl/material/solid/metal/steel
-	projectile_type = /obj/item/projectile/beam/plasmacutter/adv
-	max_shots = 25
-	self_recharge = 1
-	material = /decl/material/solid/metal/steel
-	matter = list(
-		/decl/material/solid/fiberglass = MATTER_AMOUNT_REINFORCEMENT,
-		/decl/material/solid/metal/gold = MATTER_AMOUNT_TRACE,
-		/decl/material/solid/metal/uranium = MATTER_AMOUNT_TRACE
-	)
-
-/obj/item/gun/energy/plasmacutter/adv/Initialize()
-	. = ..()
-	set_extension(src, /datum/extension/tool, list(TOOL_SAW = TOOL_QUALITY_GOOD))
-
-/obj/item/gun/energy/plasmacutter/get_heat()
-	. = max(..(), 4200)
 
 /obj/item/gun/energy/plasmacutter/mounted
 	name = "mounted plasma cutter"
@@ -189,8 +160,8 @@
 	return TRUE
 
 /obj/item/gun/energy/incendiary_laser
-	name = "blazer revolver"
-	desc = "The SmartInc 'Blazer' was the first of a class of dispersive laser weapons which, instead of firing a focused beam, scan over a target rapidly with the goal of setting it ablaze. Tier: <font color=#a840b1><font size=2>Rare"
+	name = "dispersive blaster"
+	desc = "The SmartInc 'Blazer' was the first of a class of dispersive laser weapons which, instead of firing a focused beam, scan over a target rapidly with the goal of setting it ablaze."
 	icon = 'icons/obj/guns/incendiary_laser.dmi'
 	icon_state = ICON_STATE_WORLD
 	safety_icon = "safety"

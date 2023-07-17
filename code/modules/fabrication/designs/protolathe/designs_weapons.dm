@@ -32,6 +32,9 @@
 /datum/fabricator_recipe/protolathe/weapon/lasercannon
 	path = /obj/item/gun/energy/lasercannon
 
+/datum/fabricator_recipe/protolathe/weapon/xrayrifle
+	path = /obj/item/gun/energy/xray
+
 /datum/fabricator_recipe/protolathe/weapon/grenadelauncher
 	path = /obj/item/gun/launcher/grenade
 

@@ -81,9 +81,9 @@
 
 /obj/item/gun/projectile/revolver/matax
 	name = "Matax 12"
-	desc = "A martian revolver of ancient design intended for use by ground police forces and for civilian self-defense. The Matax model is known as a reliable weapon galaxy-wide, though its use of pistol rounds leaves it lacking in stopping power. Chambered in .32 rounds. Tier: <font color=#bebebe><font size=2>Common"
+	desc = "A martian revolver of ancient design intended for use by ground police forces and for civilian self-defense. The Matax model is known as a reliable weapon galaxy-wide, though its use of pistol rounds leaves it lacking in stopping power. Chambered in .32 rounds."
 	icon = 'mods/persistence/icons/obj/guns/tier1/matax.dmi'
-	origin_tech = "{'combat':2,'engineering':2,'materials':2}"
+	origin_tech = "{'combat':3,'engineering':2,'materials':2}"
 	caliber = CALIBER_REVOLVER
 	ammo_type = /obj/item/ammo_casing/revolver
 	max_shells = 6
@@ -94,7 +94,7 @@
 
 /obj/item/gun/projectile/revolver/k7
 	name = "K-7 Revolver"
-	desc = "The K-7 is a rare Martian Arms revolver mostly seen by outlaws and frontier worlds, it has a magnetic trigger system which allows it to fire faster. The cylinder also fit 8 rounds. Chambered in 10mm rounds. Tier: <font color=red><font size=2>Exotic"
+	desc = "The K-7 is a rare Martian Arms revolver mostly seen by outlaws and frontier worlds, it has a magnetic trigger system which allows it to fire faster. The cylinder also fit 8 rounds. Chambered in 10mm rounds."
 	icon = 'mods/persistence/icons/obj/guns/tier1/k7.dmi'
 	origin_tech = "{'combat':3,'engineering':2,'materials':2}"
 	caliber = CALIBER_PISTOL
@@ -107,8 +107,8 @@
 
 /obj/item/gun/projectile/revolver/mx2
 	name = "MX-2 Revolver"
-	desc = "The MX-2 is a heavy HexGuard revolver that has a smooth wooden grip with a stainless steel body. The cylinder also fit 6 rounds. Chambered in 15mm rounds. Tier: <font color=green><font size=2>Uncommon"
-	icon = 'mods/persistence/icons/obj/guns/tier1/mx2.dmi'
+	desc = "The MX-2 is a heavy HexGuard revolver that has a smooth wooden grip with a stainless steel body. The cylinder also fit 6 rounds. Chambered in 15mm rounds."
+	icon = 'mods/persistence/icons/obj/guns/tier1/k7.dmi'
 	origin_tech = "{'combat':3,'engineering':2,'materials':2}"
 	caliber = CALIBER_PISTOL_MAGNUM
 	ammo_type = /obj/item/ammo_casing/pistol/magnum
@@ -120,7 +120,7 @@
 
 /obj/item/gun/projectile/revolver/blade
 	name = "BLADER Revolver"
-	desc = "The Blader is a rare SmartInc revolver using extremely powerful bullets to penetrate most targets. The cylinder also fit 10 rounds. Chambered in 15mm rounds. Tier: <font color=red><font size=2>Exotic"
+	desc = "The Blader is a rare SmartInc revolver using extremely powerful bullets to penetrate most targets. The cylinder also fit 10 rounds. Chambered in 15mm rounds."
 	icon = 'mods/persistence/icons/obj/guns/tier1/blade.dmi'
 	origin_tech = "{'combat':3,'engineering':2,'materials':2}"
 	caliber = CALIBER_PISTOL_MAGNUM
@@ -134,7 +134,7 @@
 
 /obj/item/gun/projectile/revolver/bladeblack
 	name = "BLADER Revolver (Chomie)"
-	desc = "The Blader is a rare SmartInc revolver using extremely powerful bullets to penetrate most targets. This one seems to be made with a special metal alloy. Chambered in 15mm rounds. Tier: <font color=red><font size=2>Exotic"
+	desc = "The Blader is a rare SmartInc revolver using extremely powerful bullets to penetrate most targets. This one seems to be made with a special metal alloy. Chambered in 15mm rounds."
 	icon = 'mods/persistence/icons/obj/guns/tier1/bladec.dmi'
 	origin_tech = "{'combat':3,'engineering':2,'materials':2}"
 	caliber = CALIBER_PISTOL_MAGNUM
