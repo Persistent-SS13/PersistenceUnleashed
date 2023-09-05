@@ -76,7 +76,7 @@
 	desc = "You have a rare aptitude for chemistry and medicine which makes you a valuable commidity in the Frontier. You also have basic botanical and research ability."
 	skills = list(
 		SKILL_CHEMISTRY = 2,
-		SKILL_MEDICINE = 2,
+		SKILL_MEDICAL = 2,
 		SKILL_SCIENCE	= 1,
 		SKILL_BOTANY = 1
 	)
@@ -88,7 +88,7 @@
 	desc = "You have a capable hand at surgery and medicine plus basic experience in Chemistry and EVA operation. As a Frontier Surgeon you will fight to keep your patients alive and clone those who cant be saved."
 	skills = list(
 		SKILL_ANATOMY = 2,
-		SKILL_MEDICINE = 2,
+		SKILL_MEDICAL = 2,
 		SKILL_CHEMISTRY	= 1,
 		SKILL_EVA = 1
 	)
